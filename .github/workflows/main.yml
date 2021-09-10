@@ -55,7 +55,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }}
+          passphrase: ${{ secrets.PASSPHRASE }} # pass
           script: |
             # Выполняет pull образа с DockerHub
             sudo docker pull antnrmnv/infra_actions
